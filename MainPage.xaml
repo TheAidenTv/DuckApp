@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuckApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="75"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                x:Name="duckImage"
+                SemanticProperties.Description="A picture of a random duck"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+
+            <Button
+                x:Name="newDuckButton"
+                Text="Generate New Duck"
+                SemanticProperties.Hint="A button to generate a new random duck"
+                Clicked="GenerateRandomDuck"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
